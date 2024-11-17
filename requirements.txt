@@ -3,3 +3,8 @@ requests
 llama_parse
 google.generativeai
 langchain_google_genai
+transformers
+ipykernel
+rank_bm25
+scikit-learn
+torch

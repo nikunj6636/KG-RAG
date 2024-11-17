@@ -9,6 +9,11 @@ from llama_parse import LlamaParse
 import google.generativeai as genai
 from langchain_google_genai import ChatGoogleGenerativeAI
 
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
 nest_asyncio.apply()
 
 class counter():
@@ -90,7 +95,7 @@ def parse_papers(parser):
 def main(file):
     os.makedirs("pdf_papers", exist_ok=True)
     os.makedirs("txt_papers", exist_ok=True)
-    parser = LlamaParse(api_key=os.environ['LLAMAINDEX_API_KEY'], result_type="markdown")
+    parser = LlamaParse(api_key=os.getenv('LLAMAINDEX_API_KEY'), result_type="markdown")
 
     text = parser.load_data(file)
     output_file = os.path.splitext(file)[0] + '.txt'
