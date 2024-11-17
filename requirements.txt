@@ -1,0 +1,6 @@
+pandas
+langchain
+langchain_chroma
+langchain_openai
+langchain_core
+langchain_text_splitters
