@@ -30,3 +30,8 @@ pip install -r requirements.txt
 - Retrives the most relevant papers from *txt_papers* using __ColBERT__ model.
 - Stores most relevant papers in *final_input* directory in .txt format
 - *final_input* dir is used for running on __Microsoft Graph RAG__.
+
+### To run Knowledge GraphRAG
+- cp final_input/* `/path/to/input`
+- `/path/to/input` directory refers to input directory of `MS KG-RAG` implementation
+- Run `KG-RAG`, CLI app with QnA session
