@@ -1,0 +1,13 @@
+Q1: Explain the concept of Attention
+A1:
+Attention is a mechanism that allows models to focus on different parts of the input sequence when producing an output, enabling the modeling of dependencies regardless of their distance in the sequence. Self-attention, specifically, relates different positions within a single sequence to compute its representation, and it has been effectively applied in various tasks like reading comprehension and summarization. The Transformer model uniquely relies entirely on self-attention instead of recurrent networks, allowing for better parallelization and improved performance in tasks such as translation.
+
+Q2: Can SVD be used to compute Attention Scores in Transformers?
+A2: 
+The information is not available in the provided context.
+
+Q3: How does Dropout help in preventing Overfitting in Transformers?
+A3:
+How does Dropout help in preventing Overfitting in Transformers?
+Dropout helps prevent overfitting in Transformers by applying it to the output of each sub-layer before it is added to the sub-layer input and normalized. Additionally, dropout is applied to the sums of the embeddings and positional encodings in both the encoder and decoder stacks. This regularization technique encourages the model to learn more robust features by randomly deactivating a portion of the neurons during training.
+
